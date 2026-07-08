@@ -1,0 +1,28 @@
+{
+  "name": "Subtask",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "todo",
+        "completed"
+      ],
+      "default": "todo"
+    },
+    "order": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "title",
+    "task_id"
+  ]
+}
