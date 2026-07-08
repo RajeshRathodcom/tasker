@@ -1,0 +1,73 @@
+{
+  "name": "Task",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "service_id": {
+      "type": "string"
+    },
+    "scheduled_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "deadline": {
+      "type": "string",
+      "format": "date"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "expected_days": {
+      "type": "number",
+      "default": 0
+    },
+    "expected_hours": {
+      "type": "number",
+      "default": 0
+    },
+    "expected_minutes": {
+      "type": "number",
+      "default": 0
+    },
+    "priority_order": {
+      "type": "number",
+      "default": 0
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "todo",
+        "in_progress",
+        "completed"
+      ],
+      "default": "todo"
+    },
+    "completed_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "is_template": {
+      "type": "boolean",
+      "default": false
+    },
+    "assigned_to": {
+      "type": "string"
+    },
+    "total_time_spent": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "title"
+  ]
+}
