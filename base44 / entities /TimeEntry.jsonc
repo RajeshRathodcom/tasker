@@ -1,0 +1,28 @@
+{
+  "name": "TimeEntry",
+  "type": "object",
+  "properties": {
+    "task_id": {
+      "type": "string"
+    },
+    "start_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "end_time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "duration_seconds": {
+      "type": "number",
+      "default": 0
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "task_id"
+  ]
+}
